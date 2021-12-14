@@ -3,26 +3,25 @@ using System.Linq;
 
 namespace Store.Memory
 {
-    public class BookRepository : IBookRepository
+    public class BookRepository : 
+
     {
         private readonly Book[] books = new[]
+
         {
 
-            new Book(1,"Art Of Programming"),
+            new Book(1,"Art of programming"),
 
             new Book(2,"Refactoring"),
 
-
-            new Book(3,"C Programming Language"),
-
-
+            new Book(3, "C Programming Language"),
 
         };
 
         public Book[] GetAllByTite(string titlePart)
         {
             return books.Where(book => book.Title.Contains(titlePart))
-                         .ToArray();
+                        .ToArray();
         }
     }
 }
