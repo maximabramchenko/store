@@ -13,7 +13,7 @@ namespace Store.Memory
             new Book(2,"Refactoring"),
 
 
-            new Book(3,"C Programming Language")
+            new Book(3,"C Programming Language"),
 
 
 
